@@ -2,96 +2,101 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About the Anura Meter</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-    }
-
-    .modal {
-      display: block; /* Automatically show on load */
-      position: fixed;
-      z-index: 1;
-      left: 0; top: 0;
-      width: 100%; height: 100%;
-      overflow: auto;
-      background-color: rgba(0, 0, 0, 0.5);
-    }
-
-    .modal-content {
-      background-color: #fff;
-      margin: 10% auto;
-      padding: 20px;
-      border-radius: 8px;
-      width: 90%;
-      max-width: 700px;
-      text-align: left;
-      position: relative;
-    }
-
-    .close {
-      position: absolute;
-      top: 10px;
-      right: 15px;
-      color: #aaa;
-      font-size: 28px;
-      font-weight: bold;
-    }
-
-    .close:hover,
-    .close:focus {
-      color: #000;
-      cursor: pointer;
-    }
-
-    h2 {
-      margin-top: 0;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anura Meter</title>
 </head>
 <body>
 
-  <div class="modal" id="infoModal">
-    <div class="modal-content">
-      <span class="close" id="closeModalBtn">&times;</span>
-      <h2>About the Anura Meter</h2>
-      <p>Anura Meter tracks selected manifesto promises of President Anura Kumara Dissanayake based on their alignment with key areas of public interest, relating to economic reform, governance, anti-corruption, and social protection.</p>
-      <ul>
-        <li>Economic reform-related promises focus on investment, trade, public finance, and tax reforms.</li>
-        <li>Governance-related promises address processes and systems of decision-making, coordination, and management within the government for better transparency and accountability.</li>
-        <li>Anti-corruption-related promises focus on implementing systems and legal frameworks to prevent, detect, and punish corrupt practices within public institutions and government operations.</li>
-        <li>Social protection-related promises refer to policies, programs, and regulatory mechanisms aimed at reducing poverty, vulnerability, and discrimination.</li>
-      </ul>
-      <p><strong>Tracking will rely on:</strong></p>
-      <ul>
-        <li>Publicly available information from official government sources</li>
-        <li>Government responses to Right to Information (RTI) requests</li>
-        <li>Crowd-sourced updates, verified by the Parliamentary Research Team at Verité Research</li>
-      </ul>
-      <p>The 24 promises that were selected were based on our observations on the most critical elements of the manifesto that generated high public interest.</p>
-    </div>
+  <!-- Banner Section -->
+  <div style="width: 100%; max-width: 1200px; margin: 0 auto;">
+    <img src="Anura Meter Banner.png" alt="Anura Meter Banner" style="width: 100%; height: auto; display: block; border-radius: 12px;" />
   </div>
-
-  <script>
-    const modal = document.getElementById("infoModal");
-    const closeBtn = document.getElementById("closeModalBtn");
-
-    closeBtn.onclick = function () {
-      modal.style.display = "none";
-    };
-
-    window.onclick = function (event) {
-      if (event.target === modal) {
-        modal.style.display = "none";
-      }
-    };
-  </script>
 
 </body>
 </html>
+
+<!-- About the Anura Meter Section -->
+  <div style="max-width: 1200px; margin: 40px auto; padding: 0 20px; font-family: Arial, sans-serif;">
+    <h2 style="font-size: 28px; font-weight: bold; margin-bottom: 16px;">About the Anura Meter</h2>
+    <p style="font-size: 16px; line-height: 1.6;">
+      Anura Meter tracks selected manifesto promises of President Anura Kumara Dissanayake based on their alignment with key areas of public interest, relating to economic reform, governance, anti-corruption, social protection, and law and order.
+    </p>
+  </div>
+
+  <!-- Areas of Focus Section -->
+  <div style="max-width: 1200px; margin: 40px auto; padding: 0 20px; font-family: Arial, sans-serif;">
+    <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 24px;">Areas of Focus</h2>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between;">
+      
+      <!-- Economic Reform -->
+      <div style="flex: 1 1 300px; background-color: #f5f5f5; padding: 20px; border-radius: 8px;">
+        <h3 style="margin-top: 0; font-size: 18px; font-weight: bold;">Economic Reform</h3>
+        <p style="font-size: 15px; line-height: 1.5;">
+          Focus on investment, trade, public finance, and tax reforms.
+        </p>
+      </div>
+
+      <!-- Governance -->
+      <div style="flex: 1 1 300px; background-color: #f5f5f5; padding: 20px; border-radius: 8px;">
+        <h3 style="margin-top: 0; font-size: 18px; font-weight: bold;">Governance</h3>
+        <p style="font-size: 15px; line-height: 1.5;">
+          Address processes and systems of decision-making, coordination, and management within the government for better transparency and accountability.
+        </p>
+      </div>
+
+      <!-- Anti-Corruption -->
+      <div style="flex: 1 1 300px; background-color: #f5f5f5; padding: 20px; border-radius: 8px;">
+        <h3 style="margin-top: 0; font-size: 18px; font-weight: bold;">Anti-Corruption</h3>
+        <p style="font-size: 15px; line-height: 1.5;">
+          Focus on implementing systems and legal frameworks to prevent, detect, and punish corrupt practices within public institutions and government operations.
+        </p>
+      </div>
+
+      <!-- Social Protection -->
+      <div style="flex: 1 1 300px; background-color: #f5f5f5; padding: 20px; border-radius: 8px;">
+        <h3 style="margin-top: 0; font-size: 18px; font-weight: bold;">Social Protection</h3>
+        <p style="font-size: 15px; line-height: 1.5;">
+          Refer to policies, programs, and regulatory mechanisms aimed at reducing poverty, vulnerability, and discrimination.
+        </p>
+      </div>
+
+      <!-- Law and Order -->
+      <div style="flex: 1 1 300px; background-color: #f5f5f5; padding: 20px; border-radius: 8px;">
+        <h3 style="margin-top: 0; font-size: 18px; font-weight: bold;">Law and Order</h3>
+        <p style="font-size: 15px; line-height: 1.5;">
+          Focus on delivering justice for past political violence, ensuring accountability for high-profile crimes, and upholding the rule of law.
+        </p>
+      </div>
+
+    </div>
+  </div>
+  <!-- Data Sources Section -->
+  <div style="max-width: 800px; margin: 60px auto; padding: 0 20px; font-family: Arial, sans-serif;">
+    <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 24px; text-align: center;">Data Sources</h2>
+    <ul style="list-style-type: disc; padding-left: 20px; font-size: 16px; line-height: 1.8;">
+      <li>Publicly available information from official government sources</li>
+      <li>Government responses to Right to Information (RTI) requests</li>
+      <li>Crowd-sourced updates verified by the Parliamentary Research Team at Verité Research</li>
+    </ul>
+  </div>
+  <!-- Disclaimers of the Initiative Section -->
+  <div style="max-width: 800px; margin: 60px auto; padding: 0 20px; font-family: Arial, sans-serif;">
+    <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 24px; text-align: center;">Disclaimers of the Initiative</h2>
+    
+    <p style="font-size: 16px; line-height: 1.6; margin-bottom: 16px;">
+      The 24 promises that were selected were based on our observations on the most critical elements of the manifesto that generated high public interest.
+    </p>
+    
+    <p style="font-size: 16px; line-height: 1.6; margin-bottom: 16px;">
+      This is a best effort initiative, where small mistakes and oversights are possible. We seek to crowdsource correction for any inadvertent errors.
+    </p>
+    
+    <p style="font-size: 16px; line-height: 1.6; margin-bottom: 16px;">
+      The inclusion or omission of a promise on this platform should not be considered an endorsement.
+    </p>
+    
+    <p style="font-size: 16px; line-height: 1.6;">
+      Verité Research takes no responsibility for any opinions, views, conclusions derived, or representations made, etc., by any individual or organisation based on their engagement with and interpretation of data available through the Anura Meter.
+    </p>
+  </div>
